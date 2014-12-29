@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> search food trucks around </title>
+</head>
+
+<script>
+
+function validateForm() {
+	var y = document.forms["s"]["address"].value;
+	y = y.replace(/^\s+|\s+$/g, "");
+	if (y == "") {
+		alert("Location should not be empty!");
+		return false;
+	}
+	
+    	var x = document.forms["s"]["number"].value;
+	x = x.replace(/^\s+|\s+$/g, "");
+    	if ((x<=10 && x>=0.01) == false) {
+        	alert("Radius should be in range 0.01 - 10 miles");
+        	return false;
+    	}
+}
+
+</script>
+
+<body>
+<div style = "text-align: center">
+<h2>
+This page is used to search food trucks nearby.
+<br>
+Please input your location in detail and a scope you would like to search.
+<br>
+<br>
+<br>
+</h2>
+
+<form name = "s" action = "http://ec2-54-67-96-156.us-west-1.compute.amazonaws.com/cgi-bin/search.py" method = "get" onsubmit = "return validateForm()" >
+Location:
+<br>
+<input name = "address" style = "width:400px" type = "text">
+<br>
+<br>
+<br>
+Radius(Miles between 0.01-10): <input name = "number" style = "width:100px" type = "text">
+<br>
+<br>
+<br>
+<input type = "Submit" value = "Submit">
+</form>
+
+</div>
+</body>
+
+</html>
