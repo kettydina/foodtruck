@@ -6,14 +6,14 @@ Create a service that tells the user what types of food trucks might be found ne
 To get the service, the user has to access to the web server via a browser.
 
 The problem includes three questions.
-1. How to design the web page to let the user input information?
-   The information should at least includes two parts: the specific address and the search scope.
+1.  How to design the web page to let the user input information?
+    The information should at least includes two parts: the specific address and the search scope.
 
-2. How to get the data about food trucks nearby?
-   Download the data from website in Json format.
+2.  How to get the data about food trucks nearby?
+    Download the data from website in Json format.
 
-3. How to show the food trucks on a map?
-   Parse the Json information and use google map APIs to mark truck places.
+3.  How to show the food trucks on a map?
+    Parse the Json information and use google map APIs to mark truck places.
 
 ==============================================================================================================================
 
@@ -70,8 +70,10 @@ If I have additional time on the project, I will do several things to make my pr
 Installing the service application under Linux
 --------------------------------------------------
 First, make sure httpd is running on your web server.
+
 Second, put index.html under html folder and search.py under cgi-bin folder.
 The index.html is the default web page when you input the web server's address in the browser.
+
 Third, make sure python has been installed on your Linux web server.
 If the service doesn't work, maybe the python path in the python file is incorrect.
 Use 'whereis python' command to find your python path and modify the corresponding content in search.py (the first line).
