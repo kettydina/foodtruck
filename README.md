@@ -6,14 +6,15 @@ Create a service that tells the user what types of food trucks might be found ne
 To get the service, the user has to access to the web server via a browser.
 
 The problem includes three questions.
-1.  How to design the web page to let the user input information?
-    The information should at least includes two parts: the specific address and the search scope.
 
-2.  How to get the data about food trucks nearby?
-    Download the data from website in Json format.
+1. How to design the web page to let the user input information?
+The information should at least includes two parts: the specific address and the search scope.
 
-3.  How to show the food trucks on a map?
-    Parse the Json information and use google map APIs to mark truck places.
+2. How to get the data about food trucks nearby?
+Download the data from website in Json format.
+
+3. How to show the food trucks on a map?
+Parse the Json information and use google map APIs to mark truck places.
 
 ==============================================================================================================================
 
